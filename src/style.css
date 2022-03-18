@@ -1,0 +1,21 @@
+html, body { width: 92%; height: 100%; padding: 0; background: #ffeecc; margin: 0% 4% 4% 4%; }
+#renderCanvas { width: 90%; height: 90%; touch-action: none; margin-left: 5%; margin-top: 2%; display: none; }
+#canvas { display: none; }
+#bodyDoc>img { display: none; }
+#grHeader { border-radius: 20px; color: #eee; padding: 10px 0 50px 10px; background: rgb(255, 164, 73); background: linear-gradient(45deg, rgba(255, 164, 73, 1) 0%, rgba(255, 67, 67, 1) 100%); }
+#contentDiv { position: relative; top: -40px; border-radius: 20px; background: #fff; padding: 20px; }
+#contentDivB { position: relative; border-radius: 20px; background: #fff; padding: 20px; }
+#rotIcon{display:none;}
+#spinnerE { display:none; font-size:100px; width:170px; height:170px; text-align:center; margin:auto; animation-name: rott; animation-duration: 0.8s; animation-iteration-count: infinite; animation-timing-function: linear; }
+#progEls{display:none;}
+@keyframes rott { 0% {transform: rotate(0deg);} 100% {transform: rotate(360deg);} }
+.slidecontainer { width: 100%; } 
+.slider { -webkit-appearance: none; width: 100%; height: 15px; border-radius: 5px; background: #d3d3d3; outline: none; opacity: 0.7; -webkit-transition: .2s; transition: opacity .2s; } 
+.slider:hover { opacity: 1; } 
+.slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 25px; height: 25px; border-radius: 50%; background: #04AA6D; cursor: pointer; } 
+.slider::-moz-range-thumb { width: 25px; height: 25px; border-radius: 50%; background: #04AA6D; cursor: pointer; } 
+#cropPosX{width:1px; background: red; position:absolute;}
+#cropPosY{height:1px; background: red; position:absolute;}
+#cropControls{display:none;}
+#cropNote{cursor:pointer;}
+#canvasImage{cursor:pointer; z-index:999;}
